@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .delay-100 {
+    animation-delay: 100ms;
+  }
+  .delay-200 {
+    animation-delay: 200ms;
+  }
+}
+
+.prose {
+  h1, h2, h3 {
+    @apply text-gray-100;
+  }
+  p {
+    @apply text-gray-100 leading-relaxed;
+  }
+  code {
+    @apply bg-gray-700 px-2 py-1 rounded text-pink-400;
+  }
+  pre {
+    @apply bg-gray-800 p-4 rounded-lg overflow-x-auto;
+    code {
+      @apply bg-transparent text-gray-100;
+    }
+  }
+  ul {
+    @apply list-disc pl-4;
+    li {
+      @apply mb-2;
+    }
+  }
+}
